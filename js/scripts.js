@@ -9,10 +9,10 @@ var roboger = function(input) {
     numbers.push(i);
   };
   console.log(numbers);
-  numbers[numbers.indexOf(1)] = beep;
-  numbers[numbers.indexOf(2)] = boop;
   numbers[numbers.indexOf(3)] = neighbor;
-
+  numbers[numbers.indexOf(2)] = boop;
+  numbers[numbers.indexOf(1)] = beep;
+  
   return numbers
 };
 
@@ -30,11 +30,5 @@ $(document).ready(function() {
 });
 
 
-// take input and make array that includes all numbers up to that number
-// search array using index method for 1
-// replace 1 with var
-// search array using index method for 2
-// replace 2 with var
-// search array using index method for 3
-// replace 3 with var
+// replace a number with any digit of 1, 2, or 3 with corresponding phrase
 
