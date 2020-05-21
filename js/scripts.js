@@ -25,7 +25,6 @@ var roboger = function(input) {
 };
 
 
-
 // front-end logic
 
 $(document).ready(function() {
@@ -34,12 +33,11 @@ $(document).ready(function() {
     var input = parseInt($("input#input").val());
     var result = roboger(input);
     $("#results").text(result);
-    $(".well").show();
+    $(".output").show();
     $("img").click(function() {
       $("#results").text(result.reverse());
     });
   });
-  
   
 });
 
