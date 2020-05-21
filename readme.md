@@ -17,7 +17,7 @@ _These are the specs I used to help me build this page._
 | The program returns a range of numbers from 0 to the user's inputted number, substituting "boop!" for 2. | 4 | 0,beep!,boop!,3,4 |
 | The program returns a range of numbers from 0 to the user's inputted number, substituting "Won't you be my neighbor?" for 3. | 4 | 0,beep!,boop!,Won't you be my neighbor?,4 |
 | The program returns a range of numbers from 0 to the user's inputted number, substituting "beep!" for any number that has a 1 as a digit. | 10 | 0,beep!,boop!,Won't you be my  neighbor?,4,5,6,7,8,9,beep! |
-| The program returns a range of numbers from 0 to the user's inputted number, substituting "boop!" for any number that has a 2 as a digit, overriding 1s. | 12 | 0,beep!,boop!,Won't you be my  neighbor?,4,5,6,7,8,9,beep!,11,boop!|
+| The program returns a range of numbers from 0 to the user's inputted number, substituting "boop!" for any number that has a 2 as a digit, overriding 1s. | 12 | 0,beep!,boop!,Won't you be my  neighbor?,4,5,6,7,8,9,beep!,beep!,boop!|
 | The program returns a range of numbers from 0 to the user's inputted number, substituting "Won't you be my neighbor?" for any number that has a 3 as a digit, overriding 1s and 2s. | 32 | 0,beep!,boop!,Won't you be my  neighbor?,4,5,6,7,8,9,beep!,11,boop! ... 29,Won't you be my neighbor?,Won't you be my neighbor?,Won't you be my neighbor? |
 
 
