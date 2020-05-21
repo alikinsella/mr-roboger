@@ -1,0 +1,10 @@
+h1 {
+  font-family: 'Alegreya', serif;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #CDBE5A;
+}
+
+.output {
+  display: none;
+}
