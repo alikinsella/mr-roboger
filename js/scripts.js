@@ -2,23 +2,33 @@
 var beep = "beep!"
 var boop = "boop!"
 var neighbor = "Won't you be my neighbor?"
+var poopy = "poopy!"
 
 var roboger = function(input) {
   let numbers = [];
   for (let i = 0; i <= input; i++) {
     numbers.push(i);
   };
-  var numberStrings = [];
-  numbers.forEach(function(number) {
-    numberStrings.push(number.toString());
+
+  var numberStrings = numbers.map(function(number) {
+    return number.toString();
   });
 
   numberStrings[numberStrings.indexOf("3")] = neighbor;
   numberStrings[numberStrings.indexOf("2")] = boop;
   numberStrings[numberStrings.indexOf("1")] = beep;
+  
+  var testArrays = []
+  numberStrings.forEach(function(numberString) {
+  if (numberString === "4") {
+    numberString = poopy;
+    debugger;
+  }
+});
 
   return numberStrings;
 };
+
 
 
 
