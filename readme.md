@@ -36,7 +36,7 @@ _There are no known bugs._
 
 ## Support and contact details
 
-_XXXX_
+_If you have questions, send them to me via Github, which I assume is an option._
 
 ## Technologies Used
 .html, .css, .js, .jQuery 3.5.0, Bootstrap 3.3.7.
