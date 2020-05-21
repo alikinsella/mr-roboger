@@ -1,7 +1,7 @@
 // back-end logic
-var beep = "beep!"
-var boop = "boop!"
-var neighbor = "Won't you be my neighbor?"
+const beep = "beep!"
+const boop = "boop!"
+const neighbor = "Won't you be my neighbor?"
 
 
 var roboger = function(input) {
@@ -21,10 +21,8 @@ var roboger = function(input) {
       return number;
     };
   });
-
   return robogers;
 };
-
 
 
 
@@ -36,7 +34,13 @@ $(document).ready(function() {
     var input = parseInt($("input#input").val());
     var result = roboger(input);
     $("#results").text(result);
+    $(".well").show();
+    $("img").click(function() {
+      $("#results").text(result.reverse());
+    });
   });
+  
+  
 });
 
 
