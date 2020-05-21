@@ -8,12 +8,16 @@ var roboger = function(input) {
   for (let i = 0; i <= input; i++) {
     numbers.push(i);
   };
-  console.log(numbers);
-  numbers[numbers.indexOf(3)] = neighbor;
-  numbers[numbers.indexOf(2)] = boop;
-  numbers[numbers.indexOf(1)] = beep;
-  
-  return numbers
+  var numberStrings = [];
+  numbers.forEach(function(number) {
+    numberStrings.push(number.toString());
+  });
+
+  numberStrings[numberStrings.indexOf("3")] = neighbor;
+  numberStrings[numberStrings.indexOf("2")] = boop;
+  numberStrings[numberStrings.indexOf("1")] = beep;
+
+  return numberStrings;
 };
 
 
