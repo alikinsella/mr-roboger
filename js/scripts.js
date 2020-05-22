@@ -1,26 +1,19 @@
 // back-end logic
-const beep = "beep!"
-const boop = "boop!"
-const neighbor = "Won't you be my neighbor?"
-
 
 var roboger = function(input) {
-  let numbers = [];
+  let robogers = [];
   for (let i = 0; i <= input; i++) {
-    numbers.push(i.toString());
-  };
-  
-  var robogers = numbers.map(function(number) {
-    if (number.includes("3")) {
-      return number = neighbor;
-    } else if (number.includes("2")) {
-      return number = boop;
-    } else if (number.includes("1")) {
-      return number = beep;
+    let numberAsString = i.toString();
+    if (numberAsString.includes("3")) {
+      robogers.push("Won't you be my neighbor?");
+    } else if (numberAsString.includes("2")) {
+      robogers.push("boop!");
+    } else if (numberAsString.includes("1")) {
+      robogers.push("beep!");
     } else {
-      return number;
-    };
-  });
+      robogers.push(numberAsString);
+    }
+  };
   return robogers;
 };
 
@@ -40,5 +33,3 @@ $(document).ready(function() {
   });
   
 });
-
-
